@@ -94,8 +94,12 @@
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.join{
-	position: fixed;
+.im-powered-link{
+	display: none;
+}
+
+.join  {
+	position: fixed; 
 	top: 65%;
 	left: 25%;
 	color: black;
@@ -147,4 +151,8 @@
 	position: fixed;
 	left: 57%;
 	bottom: 8%;
+}
+
+.im-powered-link{
+	display: none;
 }
