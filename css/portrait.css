@@ -96,11 +96,12 @@
 
 .join{
 	position: fixed;
-	top: 65%;
+	top: 61%;
 	left: 15%;
 	color: black;
 	padding: 20px;
 	width: 20%;
+	height: 2%;
 	text-align: center;
 	background: rgba(0,0,0,0);
 	border: 4px solid #fdf731;
@@ -116,7 +117,7 @@
 
 .buddyup{
 	position: fixed;
-	top: 65%;
+	top: 61%;
 	left: 55%;
 	color: black;
 	padding: 15px;
