@@ -10,6 +10,9 @@
 	<link rel="stylesheet" media="(orientation: portrait)" href="css/portrait.css">
 	<link rel="stylesheet" media="(orientation: landscape)" href="css/landscape.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	
 </head>
@@ -28,104 +31,93 @@
 		<a href="https://www.instamojo.com/UACTIV/sunny-side-up/" rel="im-checkout" data-behaviour="remote" data-style="no-style" data-text="JOIN A CLASS"></a>
 		<script src="https://d2xwmjc4uy2hr5.cloudfront.net/im-embed/im-embed.min.js"></script>
 	</div> -->
-	<a href="#" class="join " id="show_calender">JOIN A CLASS</a>
-
-	<a href="http://onelink.to/3qvxhu" class="buddyup ">BUDDY UP FOR EVENT</a>
+	<!-- <a href="#" class="join " id="show_calender">JOIN A CLASS</a> -->
+	<button type="button" class="join" data-toggle="modal" data-target="#hello">
+  		JOIN A CLASS
+	</button>
+	<a href="http://onelink.to/3qvxhu" class="buddyup " style="
+    text-decoration: none;
+">BUDDY UP FOR EVENT</a>
 	<a href="http://apwig.com"><img src="images/apwig.png" alt="APWIG" class="apwig"></a>
 	<a href="https://www.instagram.com/thehungrymumbaikar/"><img src="images/THM.png" alt="THM" class="thm "></a>
-	<div id="myModal" class="modal">
-		<!-- Modal content -->
-		<div class="modal-content">
-			<span class="close">x</span>
-			<table>
-				<tr>
-					<th>TIME</th>
-					<th>ACTIVITY 1</th>
-					<th>ACTIVITY 2</th>
-				</tr>
-				<tr>
-					<td>7am : 8am</td>
-					<td>Yin Yoga with Sneha Desai</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>8am : 9am</td>
-					<td>Acro Yoga with Pradeep Mehta</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>9am : 10am</td>
-					<td>Acro Yoga with Pradeep Mehta</td>
-					<td>Pilates with Meghna Thaker</td>
-				</tr>
-				<tr>
-					<td>10am : 11am</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>4pm : 5pm</td>
-					<td>Pop Pilates with Sweety Gupta</td>
-					<td>Ashtanga Yoga with Prerna Bhatia</td>
-				</tr>
-				<tr>
-					<td>5pm : 6pm</td>
-					<td>Tattwa Yoga with Pia Dhir</td>
-					<td>Kids Fitness with Studio 23</td>
-				</tr>
-				<tr>
-					<td>6pm : 7pm</td>
-					<td>2 left feet with Akriti Grover</td>
-					<td>Bellyfit with Nrityada</td>
-				</tr>
-				<tr>
-					<td>7pm : 8pm</td>
-					<td>Fit Swag with Atul Ingle</td>
-					<td>Cardio Circuit/Functional with Studio 23</td>
-				</tr>
-				<tr>
-					<td>8pm : 9pm</td>
-					<td>Bollyfit with Dhanashree Mehta</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>9pm : 10pm</td>
-					<td>Nada Yoga with Kadambari & Azeem</td>
-					<td></td>
-				</tr>
-			</table>
-			<a href="">Pay Now</a>
-			<span>INR/500 Per Session</span>
+	<div class="modal fade" id="hello" tabindex="-1" role="dialog" aria-labelledby="helloLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content" style="    background-color: rgb(57,68,93);
+">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="color:white;">&times;</span></button>
+					<h4 class="modal-title" id="helloLabel">Timings</h4>
+				</div>
+				<div class="modal-body">
+					<table>
+						<tr>
+							<th>TIME</th>
+							<th>ACTIVITY 1</th>
+							<th>ACTIVITY 2</th>
+						</tr>
+						<tr>
+							<td>7am : 8am</td>
+							<td>Yin Yoga with Sneha Desai</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>8am : 9am</td>
+							<td>Acro Yoga with Pradeep Mehta</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>9am : 10am</td>
+							<td>Acro Yoga with Pradeep Mehta</td>
+							<td>Pilates with Meghna Thaker</td>
+						</tr>
+						<tr>
+							<td>10am : 11am</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>4pm : 5pm</td>
+							<td>Pop Pilates with Sweety Gupta</td>
+							<td>Ashtanga Yoga with Prerna Bhatia</td>
+						</tr>
+						<tr>
+							<td>5pm : 6pm</td>
+							<td>Tattwa Yoga with Pia Dhir</td>
+							<td>Kids Fitness with Studio 23</td>
+						</tr>
+						<tr>
+							<td>6pm : 7pm</td>
+							<td>2 left feet with Akriti Grover</td>
+							<td>Bellyfit with Nrityada</td>
+						</tr>
+						<tr>
+							<td>7pm : 8pm</td>
+							<td>Fit Swag with Atul Ingle</td>
+							<td>Cardio Circuit/Functional with Studio 23</td>
+						</tr>
+						<tr>
+							<td>8pm : 9pm</td>
+							<td>Bollyfit with Dhanashree Mehta</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>9pm : 10pm</td>
+							<td>Nada Yoga with Kadambari & Azeem</td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="modal-footer">
+					<div class="button">
+						 <a href="https://www.instamojo.com/UACTIV/sunny-side-up/" rel="im-checkout" data-behaviour="remote" data-style="no-style" data-text="Pay Now" data-dismiss="hello"></a>
+<script src="https://d2xwmjc4uy2hr5.cloudfront.net/im-embed/im-embed.min.js"></script>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<script>
-		// Get the modal
-		var modal = document.getElementById('myModal');
-
-		// Get the button that opens the modal
-		var btn = document.getElementById("show_calender");
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on the button, open the modal 
-		btn.onclick = function() {
-			modal.style.display = "block";
-		}
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-			modal.style.display = "none";
-		}
-
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
-	</script>
 
 </body>
 </html>
